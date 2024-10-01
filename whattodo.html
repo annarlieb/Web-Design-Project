@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>ExperieN(Y)Ce | What to Do</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+
+    <div class="logo">
+        <img src="images/logoLightMode.svg" alt="ExperieN(Y)Ce Logo" class="logoImg">
+    </div>
+
+ 
+
+    <div class="grid-container2">
+    
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="whattodo.html" class="current hasSubMenu">What To Do</a>
+                    <ul class="subMenu">
+                        <li><a href="attractions.html"> Attractions</a></li>
+                        <li><a href="specialEvents.html">Special Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="wheretostay.html">Where To Stay</a></li>
+                <li><a href="sportsteams.html">Sports Teams</a></li>
+                
+                <li> <button onclick="toggleDarkMode()" id="modeButton">Dark Mode</button> </li>
+            </ul>
+        </nav> 
+        
+    
+        <div class="header">
+            <h1>What to do in New York City</h1>
+            <p> New York City is filled with so much to see and experience! Wherever you are, you will always find something to  do. You are now able to pay for public transportation (both the MTA buses and subway) using tap to pay, so you will be good to go! </p>
+            <div class="toDoMain">
+                
+                <button onclick="window.location.href='attractions.html'">Check Out These Attractions!</button>
+                <button onclick="window.location.href='spectialEvents.html'">Check Out These Special Events!</button>
+            </div>
+
+            <div> 
+                <p>   </p>
+            </div>
+        </div>
+
+        
+        <div class="photoBottom">
+            <img src="images/nycAtSunset.jpg" alt="New York City Photo"> <!-- Reference: By: Mike C. Valdivia; URL: https://unsplash.com/photos/buildings-near-body-of-water-landscape-photography-kZokA2VTKn4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash-->
+        </div>
+        
+    
+        
+        
+        
+    </div>
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>ExperieN(Y)Ce | Where to Stay</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+
+    <div class="logo">
+        <img src="images/logoLightMode.svg" alt="ExperieN(Y)Ce Logo" class="logoImg">
+    </div>
+
+
+    <div class="grid-container-stay">
+    
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="whattodo.html" class="hasSubMenu">What To Do</a>
+                    <ul class="subMenu">
+                        <li><a href="attractions.html"> Attractions</a></li>
+                        <li><a href="specialEvents.html">Special Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="wheretostay.html" class="current">Where To Stay</a></li>
+                <li><a href="sportsteams.html">Sports Teams</a></li>
+                
+                <li> <button onclick="toggleDarkMode()" id="modeButton">Dark Mode</button> </li>
+            </ul>
+        </nav> 
+
+        <div class="header">
+            <h1>Where To Stay</h1>
+
+            <div> 
+                <p>There are countless places to stay in New York City. Here are a few recommendations! </p>
+            
+                <p>Different neighbourhoods have different vibes, so you might want to research the various New York City communities prior to choosing a place to stay! </p>
+            
+            </div>
+
+
+        </div>
+    
+        <div class="left">
+            <div id="hotelmap"></div>
+        </div>
+
+
+        <div class="main">
+            
+            <button id="sortByPrice">Sort by Price</button>
+            <button id="sortByStars">Sort by Stars</button>
+
+            <table id="hotelTable">
+                <thead>
+                    <tr>
+                        <th>Hotel Name</th>
+                        <th>Price*</th>
+                        <th>Stars</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="lefttext">Motto by Hilton New York City Chelsea</td>
+                        <td>&euro;182</td>
+                        <td>4.4</td>
+                        <td><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=NYCDLUA&arrivalDate=2024-04-16&departureDate=2024-04-17&room1NumAdults=2&ta_refid=b1f1837a-7354-4110-8fa0-be7a1ff3cd82&WT.mc_id=zLADA0WW1UA2PSH3TA4SEMTABL5HWB6NYCDLUA7_310602136&dclid=CNmi0d_xxoUDFU8eigMdSfYGCA">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">PUBLIC Hotel</td>
+                        <td>&euro;390</td>
+                        <td>4.4</td>
+                        <td><a href="https://www.publichotels.com/newyork">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">Hampton Inn Manhattan/Times Square Central</td>
+                        <td>&euro;148</td>
+                        <td>4.3</td>
+                        <td><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=NYCFFHX&arrivalDate=2024-04-28&departureDate=2024-04-29&room1NumAdults=2&displayCurrency=EUR&ta_refid=ebc12ebd-d502-4013-b0e6-c593bf8840b1_LHHR3X&WT.mc_id=zLADA0US1WW2OLX3TA4AMPBMP5LF6_NYCFFHX7_117711435&rate=PUBLIC&dclid=CNSk3onwxoUDFSQwigMd5rwOJA&hmGUID=33ce18c0-3dc3-4896-17e2-f38a55f64d58">Visit Hotel Website!</a></td>
+
+                    </tr>
+                    <tr>
+                        <td class="lefttext">Ace Hotel New York</td>
+                        <td>&euro;320</td>
+                        <td>4.3</td>
+                        <td><a href="https://acehotel.com/new-york/">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">Arlo Soho</td>
+                        <td>&euro;300</td>
+                        <td>4.2</td>
+                        <td><a href="https://arlohotels.com/soho/">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">The Bryant Park Hotel</td>
+                        <td>&euro;352</td>
+                        <td>4.5</td>
+                        <td><a href="https://bryantparkhotel.com/#utm_source=TripAdvisor&utm_medium=Website">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">Crowne Plaza Times Square Manhattan, an IHG Hotel</td>
+                        <td>&euro;195</td>
+                        <td>4.1</td>
+                        <td><a href="https://www.ihg.com/crowneplaza/hotels/gb/en/new-york/nycmh/hoteldetail?fromRedirect=true&qSrt=sAV&qIta=99618083&icdv=99618083&glat=MEDI_TABA-website_mdpr_TripAdvisorIE_BLwebsiteD_NYCMH_gb_en_ba&qSlH=NYCMH&qRms=1&qAdlt=2&qChld=0&qCiD=16&qCiMy=032024&qCoD=17&qCoMy=032024&setPMCookies=true&qSHBrC=CP&qDest=1605%2520Broadway%252C%2520New%2520York%252C%2520NY%252C%2520US&cm_mmc=TABA-website_mdpr_TripAdvisorIE_BLwebsiteD_NYCMH_gb_en_ba&srb_u=1">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">The Jane Hotel</td>
+                        <td>&euro;199</td>
+                        <td>3.7</td>
+                        <td><a href="http://www.thejanenyc.com/">Visit Hotel Website!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="lefttext">DoubleTree by Hilton New York Downtown</td>
+                        <td>&euro;287</td>
+                        <td>3.7</td>
+                        <td><a href="https://www.hilton.com/en/hotels/nycbpdt-doubletree-new-york-downtown/?SEO_id=GMB-AMER-DT-NYCBPDT&y_source=1_MTM3MjcxOS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D">Visit Hotel Website!</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="font-size:80%">*Prices are estimates for two people and may vary depending on the time of booking. </p>
+             
+        
+        
+        </div>  
+
+
+
+        <div class="footer">
+            
+            Footer
+        
+        
+        </div>
+
+
+    </div>
+
+
+
+    <script src="main.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDomUO7Yt7wBw05VS1sxq_wUjNh_w7fZnM&map_ids-c2f2ec46fec39c1e&callback=initMap"> </script>
+  </body>
+</html>

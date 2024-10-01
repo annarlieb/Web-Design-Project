@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>ExperieN(Y)Ce | Home</title>
+    <meta
+        name="ExperieN(Y)Ce Home Page"
+        content="ExperieN(Y)Ce New York City! Learn about attractions, special events, sports and more!">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    
+
+    <div class="logo">
+        <img src="images/logoLightMode.svg" alt="ExperieN(Y)Ce Logo" class="logoImg">
+    </div>
+
+ 
+
+    <div class="grid-container-home">
+        
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html" class="current">Home</a></li>
+                <li><a href="whattodo.html" class="hasSubMenu">What To Do</a>
+                    <ul class="subMenu">
+                        <li><a href="attractions.html"> Attractions</a></li>
+                        <li><a href="specialEvents.html">Special Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="wheretostay.html">Where To Stay</a></li>
+                <li><a href="sportsteams.html">Sports Teams</a></li>
+                
+                <li> <button onclick="toggleDarkMode()" id="modeButton">Dark Mode</button> </li>
+            </ul>
+        </nav>    
+
+        <div class="header" id="fordebugging">
+            <h1>Home</h1>
+        </div>
+
+        <div class="left"> 
+            <div class="photoColumnFlex">
+                <img src="images/hudsonRiverSunset.jpeg" alt="Hudson River Sunset"> <!-- Reference: n.a. I took this photo -->
+                <img src="images/nycSkyView.jpg" alt="NYC Bridge and Sunset"> <!-- Reference: By: Patrick Tomasso; URL: https://unsplash.com/photos/wide-angle-photo-of-brooklyn-bridge-under-cloudy-sky-SVVTZtTGyaU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash -->
+                <img src="images/nycBridgeSunset.jpg" alt="NYC Bridge and Sunset"> <!-- Reference: By: Trevor Hayes; URL: https://unsplash.com/photos/cityscape-during-daytime-IA8FR0RyJDE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash  -->
+                
+            </div>  
+        </div>
+
+        
+
+        <div class="main">
+            <p style="font-weight:bold; font-size:200%; line-height:130%;"> ExperieN(Y)Ce New York City!</p>
+            
+            <p style="font-weight:bold; font-size:150%"> New York City is a city like no other.</p>
+            <p>New York City consists of five boroughs: Manhattan, Brooklyn, Queens, Staten Island, and the Bronx. As of 2020, its population is a massive 8.8 million people. New York City is the world’s premier financial centre - yet it’s so much more! New York City is the home to culture and fun!</p>
+            <p>With loads of tourist attractions, from parks to museums, New York City has it all.</p>
+            <p>Whether you’re a first-time visitor or a seasoned New Yorker, there’s always something new to discover <span class="italics">(or experie<span style="color: rgb(139, 38, 255);">n(y)c</span>e)</span> in the Big Apple.</p>
+            
+            
+            <p> 
+                <span class="boldtext">When should I visit? </span>
+                <br>
+                New York City never stops, so come whenever fits your schedule! However, you may want to keep the following considerations in mind when choosing which season to visit. <br>
+            </p>
+
+            <h4>Winter:</h4>
+            <p class="lefttext">
+                There’s nothing like New York City after snowfall. <br>
+                <span class="boldtext" style="line-height: 1.5em;">December </span> | Average High: 5&deg;C (41&deg;F) | Average Low: -1&deg;C (30&deg;F)<br>
+                <span class="boldtext" style="line-height: 1.5em;">January </span> | Average High: 4&deg;C (39&deg;F) | Average Low: -3&deg;C (26&deg;F)<br>
+                <span class="boldtext" style="line-height: 1.5em;">February </span> | Average High: 5&deg;C (40&deg;F) | Average Low: -3&deg;C (27&deg;F)<br>
+
+            </p>
+            <h4>Spring:</h4>
+            <p class="lefttext">
+                The trees get their leaves back, flowers are blooming, and New York City looks spectacular! <br>
+                <span class="boldtext" style="line-height: 1.5em;">March </span> | Average High: 8&deg;C (48&deg;F) | Average Low: 1&deg;C (34&deg;F)<br>
+                <span class="boldtext" style="line-height: 1.5em;">April </span> | Average High: 16&deg;C (61&deg;F) | Average Low: 6&deg;C (44&deg;F)<br>
+                <span class="boldtext" style="line-height: 1.5em;">May </span> | Average High: 21&deg;C (71&deg;F) | Average Low: 11&deg;C (53&deg;F)<br>
+            </p>
+            <h4>Summer:</h4>
+            <p class="lefttext">
+                New York City in the summer can get quite hot, but is still incredible! <br>
+                <span class="boldtext" style="line-height: 1.5em;">June </span> | Average High: 27&deg;C (81&deg;F) | Average Low: 17&deg;C (63&deg;F)<br>
+                <span class="boldtext" style="line-height: 1.5em;">July </span> | Average High: 29&deg;C (85&deg;F) | Average Low: 18&deg;C (68&deg;F)<br>
+                <span class="boldtext" style="line-height: 1.5em;">August </span> | Average High: 28&deg;C (83&deg;F) | Average Low: 19&deg;C (66&deg;F)<br>
+            </p>
+            <h4>Fall:</h4>
+            <p class="lefttext">
+                Seeing the leaves change to vibrant colors is unforgettable! <br>
+                <span class="boldtext"  style="line-height: 1.5em;">September </span> | Average High: 25&deg;C (77&deg;F) | Average Low: 16&deg;C (60&deg;F)<br>
+                <span class="boldtext"  style="line-height: 1.5em;">October </span> | Average High: 19&deg;C (67&deg;F) | Average Low: 10&deg;C (51&deg;F)<br>
+                <span class="boldtext"  style="line-height: 1.5em;">November </span> | Average High: 12&deg;C (54&deg;F) | Average Low: 5&deg;C (41&deg;F)<br>
+            </p>
+
+        </div>  
+
+
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
